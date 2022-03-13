@@ -15,33 +15,9 @@ class Customer:
 def calculate_discount_start(customer):
     pass
 
-
+# this is where you should end up
 def calculate_discount(customer):
     num_purchases = len(customer.get_purchases())
     if num_purchases == 0 or customer.is_club_member():
         return 0.1
     return 0
-
-
-"""
-# starting point
-def calculate_discount(customer):
-    pass
-
-# pass the first test
-def calculate_discount(customer):
-    return 0.1
-
-# pass the second test
-def calculate_discount(customer):
-    if len(customer.get_purchases()) == 0:
-        return 0.1
-    return 0
-
-# this is where they should end up
-def calculate_discount(customer):
-    num_purchases = len(customer.get_purchases())
-    if num_purchases == 0 or customer.is_club_member():
-        return 0.1
-    return 0
-"""

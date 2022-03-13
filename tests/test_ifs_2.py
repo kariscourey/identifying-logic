@@ -23,12 +23,13 @@ def test_order_ready3():
 def test_order_ready4():
     order = Order([1, 2, 3])
     order.paid = True
-    assert order_ready_to_ship(order) == False
+    order.partial_order = True
+    assert order_ready_to_ship(order) == True
 
 
 # test: order is paid, has 3 items, only two items ready to ship
 def test_order_ready5():
     order = Order([1, 2, 3])
     order.paid = True
-    order.partial_order = True
-    assert order_ready_to_ship(order) == True
+    assert order_ready_to_ship(order) == False
+

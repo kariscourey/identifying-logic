@@ -32,10 +32,11 @@ class Order:
         return self.partial_order
 
 
-# def order_ready_to_ship(order):
-#     pass
+# this is where the instructor and students will start
+def order_ready_to_ship_start(order):
+    pass
 
-
+# this is where you should end up
 def order_ready_to_ship(order):
     if order.is_paid() and (
         order.num_items() == order.items_ready_to_ship() or order.ship_partial_order()
