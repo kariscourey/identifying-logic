@@ -9,6 +9,7 @@ if order.paid and
     # start preparing order for delivery
 """
 
+
 class Order:
     def __init__(self, items, partial_order=False):
         self.items = items
@@ -20,7 +21,7 @@ class Order:
 
     def items_ready_to_ship(self):
         num_items = self.num_items()
-        if(num_items == 3):
+        if num_items == 3:
             return 2
         return num_items
 
@@ -30,13 +31,14 @@ class Order:
     def ship_partial_order(self):
         return self.partial_order
 
+
 # def order_ready_to_ship(order):
 #     pass
 
+
 def order_ready_to_ship(order):
-    if order.is_paid() and \
-        (order.num_items() == order.items_ready_to_ship() or
-        order.ship_partial_order()):
+    if order.is_paid() and (
+        order.num_items() == order.items_ready_to_ship() or order.ship_partial_order()
+    ):
         return True
     return False
-
