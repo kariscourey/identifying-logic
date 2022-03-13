@@ -33,8 +33,6 @@ python -m pytest tests/test_functions.py
 
 ## To add test cases
 
-Each block should have 3 problems and 3 unit tests. The problems
-should each have their own file in the problems directory. Each
-block currently has a single file in the tests directory which
-has the 3 tests for the block. If it works better to have a
-separate test file for each test, then do that!
+Each block has 3 problems and 3 sets of unit=tests. The problems
+live in the problems and the unit-tests live tests directory and
+all are named after the content-block they are for.

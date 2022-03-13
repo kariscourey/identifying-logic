@@ -1,4 +1,4 @@
-from problems.identifying_ifs2 import Order, order_ready_to_ship
+from problems.identifying_ifs_2 import Order, order_ready_to_ship
 
 # test: order is NOT paid, has 2 items, both items ready to ship
 def test_order_ready1():

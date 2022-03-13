@@ -1,4 +1,4 @@
-from problems.identifying_ifs1 import Customer, calculate_discount
+from problems.identifying_ifs_1 import Customer, calculate_discount
 
 # test: brand new customer, no purchases, not a club member
 def test_calculate_discount1():

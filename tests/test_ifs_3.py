@@ -1,4 +1,4 @@
-from problems.identifying_ifs3 import customer_can_skydive
+from problems.identifying_ifs_3 import customer_can_skydive
 
 
 def test_customer_can_skydive1():
