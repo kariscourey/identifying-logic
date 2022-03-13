@@ -33,12 +33,12 @@ To run the tests:
 export PYTHONPATH='.'
 
 # to run all of the tests
-pytest
+python -m pytest
 
 # to run the tests for one section
-pytest tests/test_ifs.py
-pytest tests/test_loops.py
-pytest tests/test_functions.py
+python -m pytest tests/test_ifs.py
+python -m pytest tests/test_loops.py
+python -m pytest tests/test_functions.py
 ```
 
 ## To add test cases

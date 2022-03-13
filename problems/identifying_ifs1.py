@@ -8,26 +8,39 @@ class Customer:
     def is_club_member(self):
         return self.club_member
 
-    def purchases(self):
+    def get_purchases(self):
         return self.purchases
 
 # this is where the instructor and students will start
+def calculate_discount_start(customer):
+    pass
+
+def calculate_discount(customer):
+    num_purchases = len(customer.get_purchases())
+    if num_purchases == 0 or customer.is_club_member():
+        return 0.1
+    return 0
+
+"""
+# starting point
+def calculate_discount(customer):
+    pass
+
+# pass the first test
 def calculate_discount(customer):
     return 0.1
 
-
-"""
+# pass the second test
 def calculate_discount(customer):
-    return 0.1
-
-
-
-"""
+    if len(customer.get_purchases()) == 0:
+        return 0.1
+    return 0
 
 # this is where they should end up
-def calculate_discount_final(customer):
-    purchases = customer.purchases()
-    if customer.is_club_member() or len(purchases) == 0:
+def calculate_discount(customer):
+    num_purchases = len(customer.get_purchases())
+    if num_purchases == 0 or customer.is_club_member():
         return 0.1
-    return 0.0
+    return 0
+"""
     
