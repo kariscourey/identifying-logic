@@ -14,18 +14,26 @@ This is a small project of unit-test based exercises for the 3 _Identifying Logi
 
 Do the standard python pre-amble...
 
+This is not complete at the moment, don't follow it blindly
+
 ```bash
 python -m venv .venv
-...
+activate the venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+To run the tests:
+
+```bash
+# I'm sure there is a better solution, but I had to do this
+# to get the tests to load the code under test. I also added
+# the conftest.py file based on a stackoverflow suggestion.
+# It did something, but I still had to set PYTHONPATH
+export PYTHONPATH='.'
 
 # to run all of the tests
 pytest
-
-# I'm sure there is a better solution, but I had to do this
-# to get the tests to load the code under test
-export PYTHONPATH='.'
 
 # to run the tests for one section
 pytest tests/test_ifs.py
