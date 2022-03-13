@@ -24,15 +24,19 @@ class Order:
             return 2
         return num_items
 
-    def paid(self):
+    def is_paid(self):
         return self.paid
 
     def ship_partial_order(self):
         return self.partial_order
 
+# def order_ready_to_ship(order):
+#     pass
+
 def order_ready_to_ship(order):
-    if order.paid() and \
+    if order.is_paid() and \
         (order.num_items() == order.items_ready_to_ship() or
         order.ship_partial_order()):
         return True
     return False
+
