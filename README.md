@@ -6,10 +6,6 @@ This is a small project of unit-test based exercises for the 3 _Identifying Logi
 * Identifying Loops
 * Identifying Functions
 
-
-
-
-
 ## Getting started
 
 Do the standard python pre-amble...
@@ -23,15 +19,9 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-To run the tests:
+Run the tests
 
 ```bash
-# I'm sure there is a better solution, but I had to do this
-# to get the tests to load the code under test. I also added
-# the conftest.py file based on a stackoverflow suggestion.
-# It did something, but I still had to set PYTHONPATH
-export PYTHONPATH='.'
-
 # to run all of the tests
 python -m pytest
 
@@ -48,4 +38,3 @@ should each have their own file in the problems directory. Each
 block currently has a single file in the tests directory which
 has the 3 tests for the block. If it works better to have a
 separate test file for each test, then do that!
-
