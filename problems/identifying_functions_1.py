@@ -13,23 +13,11 @@ def f_to_celsius(f):
     return celsius
 """
 
-
+# TODO: Complete this function
 def celsius_to_f(celsius):
     pass
 
-
+# TODO: Complete this function
 def f_to_celsius(f):
     pass
 
-
-# solutions below
-
-
-def celsius_to_f_final(celsius):
-    f = (celsius * 9 / 5) + 32
-    return f
-
-
-def f_to_celsius_final(f):
-    celsius = (f - 32) * 5 / 9
-    return celsius

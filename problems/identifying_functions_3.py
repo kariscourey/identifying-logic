@@ -33,17 +33,12 @@ When a customer signs up:
 
 """
 
-
+# TODO: Complete this function
 def add_new_customer(customer, add_to_mailing_list=True):
     pass
 
 
-# this is the solution
-def add_new_customer_final(customer, add_to_mailing_list=True):
-    customer.create_account()
-    Mailer.send_welcome_email(customer)
-    if add_to_mailing_list:
-        Mailer.add_to_mailing_list(customer)
+
 
 
 # This is support code, ignore it

@@ -15,16 +15,7 @@ def read_json_data(filename):
 
 import json
 
-
+# TODO: Complete this function
 def read_json_data(filename):
     pass
 
-
-def read_json_data_final(filename):
-    json_data = None
-    with open(filename) as f:
-        json_data = f.read()
-    if json_data:
-        return json.loads(json_data)
-
-    return None

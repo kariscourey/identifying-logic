@@ -29,9 +29,4 @@ def calculate_discount(customer):
     pass
 
 
-# this is where you should end up
-def calculate_discount_final(customer):
-    num_purchases = len(customer.get_purchases())
-    if num_purchases == 0 or customer.is_club_member():
-        return 0.1
-    return 0
+

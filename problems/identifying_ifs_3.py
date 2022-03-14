@@ -22,16 +22,9 @@ they they may sign up for sky diving
 
 """
 
-# this is where the instructor and students will start
+# TODO: Complete this function
 def customer_can_skydive(customer):
     pass
 
 
-# this is where you should end up
-def customer_can_skydive_final(customer):
-    if customer["age"] >= 18 or (
-        customer.get("parental_consent_form") == "signed"
-        and customer.get("safety_class_date") != None
-    ):
-        return True
-    return False
+

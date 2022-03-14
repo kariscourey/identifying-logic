@@ -35,15 +35,8 @@ then ship the items that are ready to ship.
 """
 
 
-# this is where the instructor and students will start
+# TODO: Complete this function
 def order_ready_to_ship(order):
     pass
 
 
-# this is where you should end up
-def order_ready_to_ship_final(order):
-    if order.is_paid() and (
-        order.num_items() == order.items_ready_to_ship() or order.ship_partial_order()
-    ):
-        return True
-    return False
