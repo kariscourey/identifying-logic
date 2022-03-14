@@ -27,9 +27,9 @@ class Customer:
 Requirements
 
 When a customer signs up:
-create new account
-send welcome email
-add to mailing list, if they opted in
+- create new account
+- send welcome email
+- add to mailing list, if they opted in
 
 """
 
@@ -40,13 +40,8 @@ def add_new_customer(customer, add_to_mailing_list=True):
 
 # this is the solution
 def add_new_customer_final(customer, add_to_mailing_list=True):
-    # 1 - create new account
     customer.create_account()
-
-    # 2 - send welcome email
     Mailer.send_welcome_email(customer)
-
-    # 3 - add to mailing list
     if add_to_mailing_list:
         Mailer.add_to_mailing_list(customer)
 
