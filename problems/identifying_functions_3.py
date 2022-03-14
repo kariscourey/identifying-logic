@@ -10,11 +10,13 @@ class Mailer:
 """
 Class: Customer
 """
+
+
 class Customer:
     def __init__(self, name):
         self.name = name
         self.has_account = False
-        self.on_mailing_list = False;
+        self.on_mailing_list = False
         self.got_welcome_email = False
 
     def create_account(self):
@@ -31,10 +33,9 @@ add to mailing list, if they opted in
 
 """
 
+
 def add_new_customer(customer, add_to_mailing_list=True):
     pass
-
-
 
 
 # this is the solution
@@ -50,11 +51,8 @@ def add_new_customer_final(customer, add_to_mailing_list=True):
         Mailer.add_to_mailing_list(customer)
 
 
-
-
-
-
 # This is support code, ignore it
+
 
 class Mailer:
     def add_to_mailing_list(customer):

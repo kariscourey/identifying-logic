@@ -17,17 +17,18 @@ def f_to_celsius(f):
 def celsius_to_f(celsius):
     pass
 
+
 def f_to_celsius(f):
     pass
 
 
-
-
 # solutions below
 
+
 def celsius_to_f_final(celsius):
-    f = (celsius * 9/5) + 32
+    f = (celsius * 9 / 5) + 32
     return f
+
 
 def f_to_celsius_final(f):
     celsius = (f - 32) * 5 / 9

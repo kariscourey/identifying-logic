@@ -30,8 +30,8 @@ def customer_can_skydive(customer):
 # this is where you should end up
 def customer_can_skydive_final(customer):
     if customer["age"] >= 18 or (
-        customer.get("parental_consent_form") == "signed" and
-        customer.get("safety_class_date") != None
+        customer.get("parental_consent_form") == "signed"
+        and customer.get("safety_class_date") != None
     ):
         return True
     return False

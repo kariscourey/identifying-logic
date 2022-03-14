@@ -1,6 +1,8 @@
 """
 Class: Customer
 """
+
+
 class Customer:
     def __init__(self, name, club_member=False):
         self.name = name
@@ -25,8 +27,6 @@ then apply 10% discount to order.
 # complete this function based on the requirements
 def calculate_discount(customer):
     pass
-
-
 
 
 # this is where you should end up

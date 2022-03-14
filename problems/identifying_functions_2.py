@@ -15,6 +15,7 @@ def read_json_data(filename):
 
 import json
 
+
 def read_json_data(filename):
     pass
 
@@ -27,4 +28,3 @@ def read_json_data_final(filename):
         return json.loads(json_data)
 
     return None
-

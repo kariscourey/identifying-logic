@@ -1,6 +1,8 @@
 """
 Class: Order
 """
+
+
 class Order:
     def __init__(self, items, partial_order=False):
         self.items = items
@@ -36,6 +38,7 @@ then ship the items that are ready to ship.
 # this is where the instructor and students will start
 def order_ready_to_ship(order):
     pass
+
 
 # this is where you should end up
 def order_ready_to_ship_final(order):

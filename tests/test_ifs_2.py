@@ -32,4 +32,3 @@ def test_order_ready5():
     order = Order([1, 2, 3])
     order.paid = True
     assert order_ready_to_ship(order) == False
-
