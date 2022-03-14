@@ -15,11 +15,11 @@ def read_json_data(filename):
 
 import json
 
-def read_json_data_start(filename):
+def read_json_data(filename):
     pass
 
 
-def read_json_data(filename):
+def read_json_data_final(filename):
     json_data = None
     with open(filename) as f:
         json_data = f.read()
