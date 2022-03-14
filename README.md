@@ -10,11 +10,9 @@ This is a small project of unit-test based exercises for the 3 _Identifying Logi
 
 Do the standard python pre-amble...
 
-This is not complete at the moment, don't follow it blindly
-
 ```bash
 python -m venv .venv
-activate the venv
+# you! activate your venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
@@ -26,9 +24,17 @@ Run the tests
 python -m pytest
 
 # to run the tests for one section
-python -m pytest tests/test_ifs.py
-python -m pytest tests/test_loops.py
-python -m pytest tests/test_functions.py
+python -m pytest tests/test_ifs_1.py
+python -m pytest tests/test_ifs_2.py
+python -m pytest tests/test_loops_1.py
+python -m pytest tests/test_functions_1.py
+```
+
+Slicker is the `-k` option:
+
+```bash
+python -m pytest -k ifs     # run all if related tests
+python -m pytest -k loops_2 # run the 2nd group of loop tests
 ```
 
 ## To add test cases

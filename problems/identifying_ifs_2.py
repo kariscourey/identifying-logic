@@ -1,15 +1,6 @@
 """
-If order has been paid for 
-and all items ordered are ready for delivery 
-or the order is marked for "individual shipments", 
-then ship the items that are ready to ship.
-
-if order.paid and
-    (all_items_in_stock(order) or order.partial_shipment):
-    # start preparing order for delivery
+Class: Order
 """
-
-
 class Order:
     def __init__(self, items, partial_order=False):
         self.items = items
@@ -32,12 +23,22 @@ class Order:
         return self.partial_order
 
 
+"""
+Requirements:
+
+If order has been paid for 
+and all items ordered are ready for delivery 
+or the order is marked for "individual shipments", 
+then ship the items that are ready to ship.
+"""
+
+
 # this is where the instructor and students will start
-def order_ready_to_ship_start(order):
+def order_ready_to_ship(order):
     pass
 
 # this is where you should end up
-def order_ready_to_ship(order):
+def order_ready_to_ship_final(order):
     if order.is_paid() and (
         order.num_items() == order.items_ready_to_ship() or order.ship_partial_order()
     ):
